@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Flafis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            width: 100%;
+            background-color: #ffcccb;
+            padding: 1em;
+            text-align: center;
+            font-size: 1.5em;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            max-width: 600px;
+            width: 100%;
+            padding: 1em;
+        }
+        .flafisPhoto {
+            width: 100%;
+            border-radius: 10px;
+            margin: 1em 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .form-container {
+            margin-top: 2em;
+            padding: 1em;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .form-container h3 {
+            margin-bottom: 1em;
+            font-size: 1.2em;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: none;
+            font-size: 1em;
+        }
+        button {
+            background-color: #ffcccb;
+            color: #d16161;
+            border: none;
+            padding: 0.7em 1.5em;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 1em;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        button:hover {
+            background-color: #ff9999;
+        }
+        .story {
+            display: none;
+            margin-top: 1em;
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.9em;
+            color: #6e2b2b;
+        }
+    </style>
+    <script>
+        function showStory() {
+            document.querySelector('.story').style.display = 'block';
+            document.querySelector('.story-button').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        You’re way too curious, aren't  you?
+    </header>
+    <div class="content">
+        <h1>Hii, im Flafis (ᵔᴥᵔ)</h1>
+        <img src="IMG_1637.jpg" alt="Flafis" class="flafisPhoto">
+        <p>
+            I wanted to say hi and share a bit about myself :>
+        </p>
+        <button class="story-button" onclick="showStory()">Want to hear my little story?</button>
+        <div class="story">
+            <p>
+                A while ago, I was in a car accident. It was so scary! Here is a photo of that day:
+            </p>
+            <!-- <img src="https://via.placeholder.com/600x400?text=Flafis+in+Debris" alt="FlafisAtyxhma" class="flafisPhoto"> -->
+            <video controls width="100%" style="border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+                <source src="what.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>
+                But don't worry I made it through just fine!
+            </p>
+        </div>
+        <div class="form-container">
+            <h3>Write anything you like to me </h3>
+            <form>
+                <textarea placeholder="Your message"></textarea>
+                <button type="submit">Send!</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        © 2025 Flafis. Made with ❤️ to make you smile.
+    </footer>
+</body>
+</html>
