@@ -14,6 +14,7 @@
             align-items: center;
             background-color: #f9f9f9;
             color: #333;
+            text-align: center;
         }
         header {
             width: 100%;
@@ -40,22 +41,26 @@
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
         }
         .form-container h3 {
             margin-bottom: 1em;
             font-size: 1.2em;
         }
         textarea {
-            width: 100%;
+            width: 90%;
             height: 100px;
             border-radius: 5px;
             border: 1px solid #ccc;
+            padding: 0.5em;
             resize: none;
             font-size: 1em;
+            margin: 0 auto;
+            display: block;
         }
         button {
             background-color: #ffcccb;
-            color: #d16161;
+            color: #333;
             border: none;
             padding: 0.7em 1.5em;
             border-radius: 5px;
@@ -74,7 +79,8 @@
         footer {
             margin-top: 2em;
             font-size: 0.9em;
-            color: #6e2b2b;
+            color: #777;
+            text-align: center;
         }
     </style>
     <script>
@@ -97,7 +103,7 @@
         <button class="story-button" onclick="showStory()">Want to hear my little story?</button>
         <div class="story">
             <p>
-                A while ago, I was in a car accident. It was so scary! Here is a photo of that day:
+                A while ago, I was in a car accident. It was so scary! Here is a video of that day:
             </p>
             <!-- <img src="https://via.placeholder.com/600x400?text=Flafis+in+Debris" alt="FlafisAtyxhma" class="flafisPhoto"> -->
             <video controls width="100%" style="border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
